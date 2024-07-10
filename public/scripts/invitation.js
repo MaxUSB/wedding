@@ -18,7 +18,7 @@ $(document).ready(function () {
     const confirmation = $('input[name="confirmation"]:checked').val();
     const children = $('input[name="children"]').val();
 
-    let message = `${guestSettings.invitation} ${confirmation}`;
+    let message = `${guestSettings.alias} ${confirmation}`;
     if (guestSettings.childrenQuestion && confirmation.includes('🟢')) {
       message += `\n\nКол-во детей: ${children}`
     }
