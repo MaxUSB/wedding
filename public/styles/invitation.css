@@ -439,6 +439,7 @@ a {
 
 .form-submit-error:hover {
     background-color: #ed9fae;
+    color: black;
 }
 
 /* TIMER BLOCK */

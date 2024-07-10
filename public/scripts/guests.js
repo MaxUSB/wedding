@@ -2,93 +2,163 @@ const guests = {
   test: {
     preInvitation: 'Дорогой',
     invitation: 'Тестовый гость',
+    alias: 'тест',
     childrenQuestion: true,
-  },
-
-  prnt: {
-    preInvitation: 'Дорогие',
-    invitation: 'папочка и мамочка',
-    childrenQuestion: true,
-  },
-  grpr: {
-    preInvitation: 'Дорогие',
-    invitation: 'дедушка и бабушка',
-    childrenQuestion: false,
-  },
-  grmt: {
-    preInvitation: 'Дорогая',
-    invitation: 'бабушка',
-    childrenQuestion: false,
   },
 
   // FRIENDS
   lkml: {
     preInvitation: 'Дорогие',
-    invitation: 'Саша и Соня',
+    invitation: 'Соня и Саша',
+    alias: 'Луконины (младшие)',
     childrenQuestion: false,
   },
   emlv: {
     preInvitation: 'Дорогие',
-    invitation: 'Толя и Аня',
+    invitation: 'Аня и Толя',
+    alias: 'Емельяновы',
     childrenQuestion: false,
   },
   drnk: {
     preInvitation: 'Дорогие',
-    invitation: 'Ваня и Настя',
+    invitation: 'Настя и Ваня',
+    alias: 'Дранниковы',
     childrenQuestion: false,
   },
-  olps: {
+  lgnv: {
     preInvitation: 'Дорогие',
-    invitation: 'Паша и Оля',
+    invitation: 'Оля и Паша',
+    alias: 'Логиновы',
     childrenQuestion: false,
   },
   btin: {
     preInvitation: 'Дорогие',
-    invitation: 'Сережа и Света',
+    invitation: 'Света и Сережа',
+    alias: 'Ботины',
     childrenQuestion: true,
   },
   zmln: {
     preInvitation: 'Дорогие',
-    invitation: 'Денис и Юля',
+    invitation: 'Юля и Денис',
+    alias: 'Земляновы',
     childrenQuestion: false,
   },
   nchv: {
     preInvitation: 'Дорогой',
     invitation: 'Максим',
+    alias: 'Нечаев',
     childrenQuestion: false,
   },
 
   // GROOM'S SIDE
+  prng: {
+    preInvitation: 'Дорогие',
+    invitation: 'мамочка и папочка',
+    alias: 'родители жениха',
+    childrenQuestion: false,
+  },
+  brtg: {
+    preInvitation: 'Дорогой',
+    invitation: 'Никита',
+    alias: 'брат жениха',
+    childrenQuestion: false,
+  },
+  grgm: {
+    preInvitation: 'Дорогие',
+    invitation: 'бабушка и дедушка',
+    alias: 'Баба Лена и Деда Вова',
+    childrenQuestion: false,
+  },
+  grgp: {
+    preInvitation: 'Дорогие',
+    invitation: 'бабушка и дедушка',
+    alias: 'Баба Зина и Деда Вова',
+    childrenQuestion: false,
+  },
   mlvy: {
-    preInvitation: 'Дорогая',
-    invitation: 'семья Миловых',
+    preInvitation: 'Дорогие',
+    invitation: 'Света и Леша',
+    alias: 'Миловы',
     childrenQuestion: true,
   },
-  klvn: {
-    preInvitation: 'Дорогая',
-    invitation: 'семья Клевиных',
-    childrenQuestion: true,
+  klvs: {
+    preInvitation: 'Дорогие',
+    invitation: 'Наташа и Леша',
+    alias: 'Клевины (старшие)',
+    childrenQuestion: false,
+  },
+  klvm: {
+    preInvitation: 'Дорогие',
+    invitation: 'София и Лиза',
+    alias: 'Клевины (младшие)',
+    childrenQuestion: false,
   },
   mtkl: {
-    preInvitation: 'Дорогая',
-    invitation: 'семья Меткаловых',
+    preInvitation: 'Дорогие',
+    invitation: 'Настя и Леша',
+    alias: 'Меткаловы',
     childrenQuestion: true,
   },
   lkst: {
-    preInvitation: 'Дорогая',
-    invitation: 'семья Лукониных',
+    preInvitation: 'Дорогие',
+    invitation: 'Татьяна и Владимир',
+    alias: 'Луконины (старшие)',
     childrenQuestion: false,
   },
 
   // BRIDE'S SIDE
+  prnb: {
+    preInvitation: 'Дорогие',
+    invitation: 'мамочка и папочка',
+    alias: 'родители невесты',
+    childrenQuestion: false,
+  },
+  brtb: {
+    preInvitation: 'Дорогой',
+    invitation: 'Арсентий',
+    alias: 'брат невесты',
+    childrenQuestion: false,
+  },
+  grbm: {
+    preInvitation: 'Дорогая',
+    invitation: 'бабушка',
+    alias: 'Баба Оля',
+    childrenQuestion: false,
+  },
+  kurp: {
+    preInvitation: 'Дорогие',
+    invitation: 'Светлана и Ярославна',
+    alias: 'Курпегины',
+    childrenQuestion: false,
+  },
+  strl: {
+    preInvitation: 'Дорогие',
+    invitation: 'Оксана и Дмитрий',
+    alias: 'Стрельцовы (старшие)',
+    childrenQuestion: false,
+  },
+  stvl: {
+    preInvitation: 'Дорогой',
+    invitation: 'Владислав',
+    alias: 'Стрельцов (младший)',
+    childrenQuestion: false,
+  },
+  star: {
+    preInvitation: 'Дорогие',
+    invitation: 'Ольга и Дмитрий',
+    alias: 'Старцевы',
+    childrenQuestion: false,
+  },
   mrtn: {
     preInvitation: 'Дорогая',
     invitation: 'семья Мартын',
+    alias: 'Мартын (младшие)',
     childrenQuestion: false,
   },
   ishn: {
     preInvitation: 'Дорогая',
     invitation: 'семья Исхановых',
+    alias: 'Исхановы',
     childrenQuestion: false,
   },
 };
