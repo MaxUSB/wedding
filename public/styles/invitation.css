@@ -1,0 +1,539 @@
+/* ZERO */
+@font-face {
+    font-family: "Larisa Script";
+    src: url("../fonts/larisa_script.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Golca";
+    src: url("../fonts/golca.woff") format("truetype");
+}
+
+* {
+    z-index: 1;
+    user-select: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #939393;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* COMMON */
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.block-transparent {
+    background-color: transparent;
+    height: 700px;
+}
+
+.block-700 {
+    height: 700px;
+}
+
+.block-500 {
+    height: 500px;
+}
+
+.block-padding-top {
+    padding-top: 60px;
+}
+
+.block-padding-bottom {
+    padding-bottom: 60px;
+}
+
+.block-image {
+    background-image: url("../images/timer.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.content {
+    width: 320px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content > * {
+    width: 100%;
+}
+
+.content-max {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+/* SOUND BUTTON */
+.sound-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    z-index: 5;
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sound-button-icon {
+    width: 50%;
+    height: 50%;
+}
+
+/* HEADER BLOCK */
+.header-photo {
+    position: absolute;
+    height: 700px;
+    z-index: 0;
+    filter: grayscale(100%);
+}
+
+.header-title {
+    display: flex;
+    text-align: center;
+    font-family: "Larisa Script", sans-serif;
+    font-size: 60px;
+    line-height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    color: white;
+}
+
+@media screen and (min-width: 900px) {
+    .header-title {
+        font-size: 100px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .header-title {
+        left: 10%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header-title {
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .header-title {
+        left: 25%;
+    }
+}
+
+/* INVITATION BLOCK */
+.invitation-title {
+    font-family: "Larisa Script", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.invitation-text {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Golca", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* INFO BLOCK */
+.info-month {
+    font-family: "Larisa Script", sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.info-date {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.info-date-calendar {
+    font-family: "Golca", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+}
+
+.info-date-day {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 64px;
+    left: 140px;
+    animation: heartbeat 2s infinite;
+    transform-origin: center center;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.375);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.info-photo {
+    width: 277px;
+    height: 383px;
+    filter: grayscale(100%);
+}
+
+.info-place {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Golca", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.info-place-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-place-title > img {
+    width: 70px;
+    height: 70px;
+}
+
+.info-place-text {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* SCHEDULE BLOCK */
+.schedule-title {
+    font-family: "Larisa Script", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.schedule-graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.schedule-graph-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.schedule-graph-row-splitter {
+    height: 1px;
+    background-color: black;
+}
+
+.schedule-graph-point {
+    width: 1px;
+    height: 30px;
+    background-color: black;
+}
+
+.schedule-graph-icon > img {
+    width: 70px;
+    height: 70px;
+}
+
+.schedule-graph-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Golca", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.schedule-graph-block-time {
+    font-size: 24px;
+}
+
+/* WISHES BLOCK */
+.wishes-title {
+    font-family: "Larisa Script", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.wishes-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Golca", sans-serif;
+    font-weight: 700;
+}
+
+.wishes-item-title {
+    font-size: 100px;
+    line-height: 100px;
+    opacity: 0.3;
+}
+
+.wishes-item-text {
+    font-size: 13px;
+    width: 280px;
+}
+
+.wishes-item-text-right {
+    text-align: right;
+}
+
+.wishes-palette {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wishes-palette-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.wishes-palette-circle-1 {
+    background-color: #ecafac;
+}
+
+.wishes-palette-circle-2 {
+    background-color: #f4b4c4;
+}
+
+.wishes-palette-circle-3 {
+    background-color: #f9b5a9;
+}
+
+.wishes-palette-circle-4 {
+    background-color: #ed9fae;
+}
+
+/* FORM BLOCK */
+.form-title {
+    font-family: "Larisa Script", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.form-question {
+    font-family: "Golca", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-question-description {
+    font-family: "Golca", sans-serif;
+    font-size: 13px;
+}
+
+.form-answer {
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: "Golca", sans-serif;
+    font-size: 14px;
+}
+
+.form-submit {
+    width: 128px;
+    height: 58px;
+    padding: 0 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: "Golca", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.form-submit:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-submit-success {
+    color: white;
+    background-color: #62c584;
+    cursor: default;
+}
+
+.form-submit-success:hover {
+    background-color: #62c584;
+}
+
+.form-submit-error {
+    color: white;
+    background-color: #ed9fae;
+    cursor: default;
+}
+
+.form-submit-error:hover {
+    background-color: #ed9fae;
+}
+
+/* TIMER BLOCK */
+.timer-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.timer-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Golca", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.timer-clock {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-clock-splitter {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.timer-clock-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Golca", sans-serif;
+    color: white;
+}
+
+.timer-clock-block-digit {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.timer-clock-block-description {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 950px) {
+    .timer-container {
+        justify-content: center;
+    }
+
+    .timer-clock {
+        gap: 13px;
+    }
+
+    .timer-clock-block-digit {
+        font-size: 30px;
+    }
+
+    .timer-clock-block-description {
+        font-size: 14px;
+    }
+}
+
+/* FOOTER BLOCK */
+.footer-title {
+    font-family: "Larisa Script", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.footer-text {
+    font-family: "Golca", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link > img {
+    width: 36px;
+    height: 36px;
+}

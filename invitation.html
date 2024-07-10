@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="public/images/favicon.png">
+    <link rel="stylesheet" href="public/styles/invitation.css">
+
+    <script src="public/scripts/jquery-3.7.1.min.js" defer></script>
+    <script src="public/scripts/guests.js" defer></script>
+    <script src="public/scripts/invitation.js" defer></script>
+    <script src="public/scripts/music.js" defer></script>
+    <script src="public/scripts/timer.js" defer></script>
+
+    <title>Приглашение на свадьбу</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="sound-button">
+        <img class="sound-button-icon" src="public/images/sound-icon.png" alt="">
+        <audio id="music">
+            <source src="public/music/christina-perri_a-thousand-years.mp3">
+        </audio>
+    </div>
+    <div class="block block-transparent block-700">
+        <img class="header-photo" src="public/images/primary.jpeg" alt="">
+        <div class="content content-max">
+            <div class="header-title">
+                Максим<br>и<br>Василина
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="content">
+            <div class="invitation-title" id="invitation"></div>
+            <div class="invitation-text">
+                Один день в этом году будет для нас особенным и мы хотим провести его в кругу близких и друзей.
+                С большим удовольствием приглашаем вас на знаменательный праздник - нашу свадьбу!
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="content">
+            <div class="info-month">
+                Август
+            </div>
+            <div class="info-date">
+                <table class="info-date-calendar">
+                    <tr><th>ПН</th><th>ВТ</th><th>СР</th><th>ЧТ</th><th>ПТ</th><th>СБ</th><th>ВС</th></tr>
+                    <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                    <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+                    <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+                    <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+                    <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
+                </table>
+                <img class="info-date-day" src="public/images/heart-icon.png" alt="">
+            </div>
+            <img class="info-photo" src="public/images/secondary.jpeg" alt="">
+            <div class="info-place">
+                <div class="info-place-title">
+                    <img src="public/images/geo-icon.png" alt="">
+                    <div>Место проведения</div>
+                </div>
+                <div class="info-place-text">
+                    <a href="https://go.2gis.com/cc9thi" target="_blank">
+                        ул. Николая Фёдорова, д. 9
+                        <br>
+                        Green House
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block block-padding-top">
+        <div class="content">
+            <div class="schedule-title">
+                Свадебное расписание
+            </div>
+            <div class="schedule-graph">
+                <div class="schedule-graph-row">
+                    <div class="schedule-graph-icon">
+                        <img src="public/images/geo-icon.png" alt="">
+                    </div>
+                    <div class="schedule-graph-block">
+                        <div>Церемония</div>
+                        <div class="schedule-graph-block-time">18:30</div>
+                    </div>
+                    <div class="schedule-graph-icon">
+                        <img src="public/images/banquet-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="schedule-graph-row schedule-graph-row-splitter">
+                    <div class="schedule-graph-point"></div>
+                    <div class="schedule-graph-point"></div>
+                    <div class="schedule-graph-point"></div>
+                </div>
+                <div class="schedule-graph-row">
+                    <div class="schedule-graph-block">
+                        <div class="schedule-graph-block-time">18:00</div>
+                        <div>Сбор гостей</div>
+                    </div>
+                    <div class="schedule-graph-icon">
+                        <img src="public/images/wedding-icon.png" alt="">
+                    </div>
+                    <div class="schedule-graph-block">
+                        <div class="schedule-graph-block-time">19:30</div>
+                        <div>Банкет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block block-padding-top">
+        <div class="content">
+            <div class="wishes-title">
+                Пожелания
+            </div>
+            <div class="wishes-item">
+                <div class="wishes-item-text">
+                    Не ломайте голову над подарками. Лучшим подарком будут денежные средства на осуществление нашей мечты...
+                </div>
+                <div class="wishes-item-title">
+                    1
+                </div>
+            </div>
+            <div class="wishes-item">
+                <div class="wishes-item-title">
+                    2
+                </div>
+                <div class="wishes-item-text wishes-item-text-right">
+                    От всего сердца просим вас воздержаться от криков "Горько!" и сохранить атмосферу уютного праздника.
+                </div>
+            </div>
+            <div class="wishes-item">
+                <div class="wishes-item-text">
+                    Мы очень старались сделать праздник красивым и будем рады, если в своих нарядах вы поддержите цветовую гамму нашей свадьбы...
+                </div>
+                <div class="wishes-item-title">
+                    3
+                </div>
+            </div>
+            <div class="wishes-palette">
+                <div class="wishes-palette-circle wishes-palette-circle-1"></div>
+                <div class="wishes-palette-circle wishes-palette-circle-2"></div>
+                <div class="wishes-palette-circle wishes-palette-circle-3"></div>
+                <div class="wishes-palette-circle wishes-palette-circle-4"></div>
+            </div>
+            <img src="public/images/woman-wear.jpeg" alt="">
+            <img src="public/images/man-wear.jpeg" alt="">
+        </div>
+    </div>
+    <div class="block block-padding-top block-padding-bottom">
+        <form class="content">
+            <div class="form-title">
+                Анкета
+            </div>
+            <div class="form-question">
+                Сможете ли присутствовать на нашем торжестве?
+                <div class="form-question-description">
+                    Если сейчас сомневаетесь насчет присутствия, пожалуйста, дайте ответ не позже 25 июля.
+                </div>
+                <label class="form-answer">
+                    <input type="radio" name="confirmation" value="придет(ут) 🟢" required>
+                    С удовольствием приду(ем)
+                </label>
+                <label class="form-answer">
+                    <input type="radio" name="confirmation" value="не придет(ут) 🔴">
+                    К сожалению, не смогу(жем) присутствовать
+                </label>
+            </div>
+            <div class="form-question" id="children-question">
+                Сколько детей будет с вами?
+                <label class="form-answer">
+                    <input type="number" name="children" value="0" min="0" max="4" step="1">
+                    Укажите кол-во детей
+                </label>
+            </div>
+            <button class="form-submit">
+                Отправить
+            </button>
+        </form>
+    </div>
+    <div class="block block-transparent block-500 block-image">
+        <div class="content">
+            <div class="timer-container">
+                <div class="timer-title">
+                    Будем очень рады<br>видеть вас<br><br>через...
+                </div>
+                <div class="timer-clock">
+                    <div class="timer-clock-block">
+                        <div class="timer-clock-block-digit" id="timer-days">30</div>
+                        <div class="timer-clock-block-description">Дней</div>
+                    </div>
+                    <div class="timer-clock-splitter">&nbsp;</div>
+                    <div class="timer-clock-block">
+                        <div class="timer-clock-block-digit" id="timer-hours">13</div>
+                        <div class="timer-clock-block-description">Часов</div>
+                    </div>
+                    <div class="timer-clock-splitter">&nbsp;</div>
+                    <div class="timer-clock-block">
+                        <div class="timer-clock-block-digit" id="timer-minutes">48</div>
+                        <div class="timer-clock-block-description">Минут</div>
+                    </div>
+                    <div class="timer-clock-splitter">&nbsp;</div>
+                    <div class="timer-clock-block">
+                        <div class="timer-clock-block-digit" id="timer-seconds">00</div>
+                        <div class="timer-clock-block-description">Секунд</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block block-padding-top block-padding-bottom">
+        <div class="content">
+            <div class="footer-title">
+                Остались вопросы?
+            </div>
+            <div class="footer-text">
+                Организатор Валерия
+                <br>
+                <a href="tel:+79123823004">+7 (912) 382-30-04</a>
+            </div>
+            <a class="footer-link" target="_blank" href="https://t.me/age_era">
+                <img src="public/images/telegram-icon.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
