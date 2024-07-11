@@ -44,9 +44,9 @@ const guests = {
     childrenQuestion: false,
   },
   nchv: {
-    preInvitation: 'Дорогой',
-    invitation: 'Максим',
-    alias: 'Нечаев',
+    preInvitation: 'Дорогие',
+    invitation: 'Полина и Максим',
+    alias: 'Нечаевы',
     childrenQuestion: false,
   },
 
