@@ -25,10 +25,10 @@ const guests = {
     alias: 'Дранниковы',
     childrenQuestion: false,
   },
-  lgnv: {
+  masl: {
     preInvitation: 'Дорогие',
     invitation: 'Оля и Паша',
-    alias: 'Логиновы',
+    alias: 'Масловы',
     childrenQuestion: false,
   },
   btin: {
