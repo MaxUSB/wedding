@@ -61,6 +61,12 @@ const guests = {
     alias: 'Захаров',
     childrenQuestion: false,
   },
+  grig: {
+    preInvitation: 'Дорогие',
+    invitation: 'Таня и Ваня',
+    alias: 'Григоровы',
+    childrenQuestion: true,
+  },
 
   // GROOM'S SIDE
   prng: {
