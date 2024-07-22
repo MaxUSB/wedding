@@ -69,7 +69,7 @@ const guests = {
   },
   vstr: {
     preInvitation: 'Дорогая',
-    invitation: 'Даша',
+    invitation: 'Дарья',
     alias: 'Вострых',
     childrenQuestion: false,
   },
