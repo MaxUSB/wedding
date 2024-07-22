@@ -67,6 +67,12 @@ const guests = {
     alias: 'Григоровы',
     childrenQuestion: true,
   },
+  vstr: {
+    preInvitation: 'Дорогая',
+    invitation: 'Даша',
+    alias: 'Вострых',
+    childrenQuestion: false,
+  },
 
   // GROOM'S SIDE
   prng: {
@@ -237,6 +243,6 @@ const guests = {
     preInvitation: 'Дорогие',
     invitation: 'Елена и Александр',
     alias: 'Первоуральск Елена и Александр',
-    childrenQuestion: false,
+    childrenQuestion: true,
   },
 };
