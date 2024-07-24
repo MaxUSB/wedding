@@ -255,6 +255,6 @@ const guests = {
     preInvitation: 'Дорогие',
     invitation: 'Наталья и Владимир',
     alias: 'Цыганковы',
-    childrenQuestion: true,
+    childrenQuestion: false,
   },
 };
