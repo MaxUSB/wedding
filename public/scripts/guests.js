@@ -245,4 +245,16 @@ const guests = {
     alias: 'Первоуральск Елена и Александр',
     childrenQuestion: true,
   },
+  ishn: {
+    preInvitation: 'Дорогие',
+    invitation: 'Ирина и Эдуард',
+    alias: 'Исхановы',
+    childrenQuestion: false,
+  },
+  chig: {
+    preInvitation: 'Дорогие',
+    invitation: 'Наталья и Владимир',
+    alias: 'Цыганковы',
+    childrenQuestion: true,
+  },
 };
