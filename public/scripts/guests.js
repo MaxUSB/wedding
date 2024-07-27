@@ -49,6 +49,30 @@ const guests = {
     alias: 'Нечаевы',
     childrenQuestion: false,
   },
+  insp: {
+    preInvitation: 'Дорогой',
+    invitation: 'Вадим',
+    alias: 'Инсапов',
+    childrenQuestion: false,
+  },
+  zkhr: {
+    preInvitation: 'Дорогой',
+    invitation: 'Сергей',
+    alias: 'Захаров',
+    childrenQuestion: false,
+  },
+  grig: {
+    preInvitation: 'Дорогие',
+    invitation: 'Таня и Ваня',
+    alias: 'Григоровы',
+    childrenQuestion: true,
+  },
+  vstr: {
+    preInvitation: 'Дорогая',
+    invitation: 'Дарья',
+    alias: 'Вострых',
+    childrenQuestion: false,
+  },
 
   // GROOM'S SIDE
   prng: {
@@ -149,16 +173,88 @@ const guests = {
     alias: 'Старцевы',
     childrenQuestion: false,
   },
-  mrtn: {
-    preInvitation: 'Дорогая',
-    invitation: 'семья Мартын',
-    alias: 'Мартын (младшие)',
+  ltsh: {
+    preInvitation: 'Дорогой',
+    invitation: 'Александр',
+    alias: 'Лутошкин',
     childrenQuestion: false,
   },
-  ishn: {
+  sgls: {
     preInvitation: 'Дорогая',
-    invitation: 'семья Исхановых',
+    invitation: 'Светлана',
+    alias: 'Суглобова Светлана',
+    childrenQuestion: false,
+  },
+  sgla: {
+    preInvitation: 'Дорогой',
+    invitation: 'Алексей',
+    alias: 'Суглобов Алексей',
+    childrenQuestion: false,
+  },
+  sgly: {
+    preInvitation: 'Дорогой',
+    invitation: 'Яков',
+    alias: 'Суглобов Яков',
+    childrenQuestion: false,
+  },
+  sglf: {
+    preInvitation: 'Дорогие',
+    invitation: 'Надежда и Владимир',
+    alias: 'Суглобовы Надежда и Владимир',
+    childrenQuestion: false,
+  },
+  kznm: {
+    preInvitation: 'Дорогой',
+    invitation: 'Максим',
+    alias: 'Кузнецов Максим',
+    childrenQuestion: false,
+  },
+  kznk: {
+    preInvitation: 'Дорогой',
+    invitation: 'Кирилл',
+    alias: 'Кузнецов Кирилл',
+    childrenQuestion: false,
+  },
+  kzng: {
+    preInvitation: 'Дорогая',
+    invitation: 'Галина',
+    alias: 'Кузнецова Галина',
+    childrenQuestion: false,
+  },
+  shmk: {
+    preInvitation: 'Дорогой',
+    invitation: 'Илья',
+    alias: 'Шмаков',
+    childrenQuestion: false,
+  },
+  ryma: {
+    preInvitation: 'Дорогая',
+    invitation: 'Римма',
+    alias: 'Римма',
+    childrenQuestion: false,
+  },
+  ttna: {
+    preInvitation: 'Дорогая',
+    invitation: 'Татьяна',
+    alias: 'Первоуральск Татьяна',
+    childrenQuestion: false,
+  },
+  elal: {
+    preInvitation: 'Дорогие',
+    invitation: 'Елена и Александр',
+    alias: 'Первоуральск Елена и Александр',
+    childrenQuestion: true,
+  },
+  ishn: {
+    preInvitation: 'Дорогие',
+    invitation: 'Ирина и Эдуард',
     alias: 'Исхановы',
+    childrenQuestion: false,
+  },
+  chig: {
+    preInvitation: 'Дорогие',
+    invitation: 'Наталья и Владимир',
+    alias: 'Цыганковы',
     childrenQuestion: false,
   },
 };
