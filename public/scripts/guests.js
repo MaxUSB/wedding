@@ -148,6 +148,7 @@ const guests = {
     invitation: 'бабушка',
     alias: 'Баба Оля',
     childrenQuestion: false,
+    noTimeLocation: true,
   },
   kurp: {
     preInvitation: 'Дорогие',

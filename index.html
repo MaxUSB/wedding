@@ -10,6 +10,7 @@
 
     <script src="public/scripts/jquery-3.7.1.min.js" defer></script>
     <script src="public/scripts/guests.js" defer></script>
+    <script src="public/scripts/hider.js" defer></script>
     <script src="public/scripts/invitation.js" defer></script>
     <script src="public/scripts/music.js" defer></script>
     <script src="public/scripts/timer.js" defer></script>
@@ -59,7 +60,7 @@
                 <img class="info-date-day" src="public/images/heart-icon.png" alt="">
             </div>
             <img class="info-photo" src="public/images/secondary.jpeg" alt="">
-            <div class="info-place">
+            <div class="info-place" id="location">
                 <div class="info-place-title">
                     <img src="public/images/geo-icon.png" alt="">
                     <div>Место проведения</div>
@@ -74,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="block block-padding-top">
+    <div class="block block-padding-top" id="time">
         <div class="content">
             <div class="schedule-title">
                 Свадебное расписание
